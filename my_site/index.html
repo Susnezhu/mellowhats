@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fi"> <!-- Указываем язык сайта -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalogi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    /* Фиксируем заголовок */
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      position: fixed; /* Фиксирует заголовок */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000; /* Устанавливает приоритет */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    /* Контейнер для иконки Instagram */
+    .instagram-icon {
+      position: absolute;
+      top: 15px; /* Расстояние от верхнего края */
+      right: 50px; /* Расстояние от правого края */
+    }
+
+    .instagram-icon img {
+      width: 30px; /* Размер иконки */
+      height: 30px;
+      border-radius: 5px; /* Квадрат с немного закругленными углами */
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out; /* Анимация при наведении */
+    }
+
+    .instagram-icon img:hover {
+      transform: scale(1.1); /* Увеличение при наведении */
+    }
+
+    /* Отступ для содержимого, чтобы не перекрывалось заголовком */
+    .catalog {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 100px 20px 20px; /* Отступ сверху из-за фиксированного header */
+    }
+
+    .product-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 200px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .product-card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .product-card button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .product-card button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Katalogi</h1> <!-- Финский заголовок -->
+
+    <!-- Иконка Instagram -->
+    <div class="instagram-icon">
+      <a href="https://www.instagram.com/mellowhats/" target="_blank"> <!-- Ссылка на Instagram -->
+        <img src="pictures/inst.jpg" alt="Instagram"> <!-- Добавь свою картинку -->
+      </a>
+    </div>
+  </header>
+
+  <div class="catalog">
+    <!-- Tuotekortti -->
+    <div class="product-card">
+      <img src="/pictures/hat_scarf_white.jpg" alt="Tuote 1">
+      <h3>Hooded Scarf Hat</h3> <!-- Название товара -->
+      <p>43,90€</p> <!-- Описание -->
+      <a href="https://www.instagram.com/direct/t/17843522478400436/" target="_blank">
+        <button>Osta</button> <!-- Кнопка "Купить" -->
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="/pictures/hat_scarf_black.jpg" alt="Tuote 2">
+      <h3>Hooded Scarf Hat</h3>
+      <p>43,90€</p>
+      <a href="https://www.instagram.com/direct/t/17843522478400436/" target="_blank">
+        <button>Osta</button>
+      </a>
+    </div>
+
+    <div class="product-card">
+      <img src="/pictures/hat_straight.jpg" alt="Tuote 3">
+      <h3>Square Cat Ear Hat</h3>
+      <p>36,90€</p>
+      <a href="https://www.instagram.com/direct/t/17843522478400436/" target="_blank">
+        <button>Osta</button>
+      </a>
+    </div>
+
+    <!-- Добавь больше карточек товара -->
+  </div>
+</body>
+</html>

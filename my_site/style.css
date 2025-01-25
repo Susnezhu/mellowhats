@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e7ec;
+  }
+
+  /* Фиксируем заголовок */
+  header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed; /* Фиксирует заголовок */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Устанавливает приоритет */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  /*Навигация три точки*/
+  .navigation {
+      position: absolute;
+      top: 20px;
+      right: 60px;
+  }
+
+  .navigation img {
+      width: 30px;
+      height: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2 ease-in-out;
+  }
+
+  .navigation img:hover {
+      transform: scale(1.1);
+  }
+
+  
+
+  /* Лого mellowhats */
+  .logo-mellowhats {
+      position: absolute;
+      top: 13px;
+      left: 20px;
+  }
+
+  .logo-mellowhats img {
+      width: 150px;
+      height: 35px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .logo-mellowhats img:hover {
+      transform: scale(1.1);
+  }
+
+
+  /* Контейнер для иконки Instagram */
+  .instagram-icon {
+    position: absolute;
+    top: 15px; /* Расстояние от верхнего края */
+    left: 200px; /* Расстояние от левого края */
+  }
+
+  .instagram-icon img {
+    width: 30px; /* Размер иконки */
+    height: 30px;
+    border-radius: 5px; /* Квадрат с немного закругленными углами */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out; /* Анимация при наведении */
+  }
+
+  .instagram-icon img:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+  }
+
+  /* иконка facebook*/
+  .facebook-icon {
+      position: absolute;
+      top: 15px;
+      left: 250px;
+  }
+
+  .facebook-icon img {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .facebook-icon img:hover {
+      transform: scale(1.1);
+  }
+
+  /* Иконка gmail*/
+
+  .gmail-icon {
+      position: absolute;
+      top: 15px;
+      left: 300px;
+  }
+
+  .gmail-icon img {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+  }
+
+  .gmail-icon img:hover {
+      transform: scale(1.1);
+  }
+
+  .catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 100px 20px 20px; /* Отступ сверху из-за фиксированного header */
+  }

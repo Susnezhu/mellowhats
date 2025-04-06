@@ -28,11 +28,10 @@
     </ul>
   </nav>
 
-
   <!--sivun sisältö-->
   <div class="content">
     <div class="main_info">
-      <dic class="welcome">
+      <div class="welcome">
         <h1>Tervetuloa!</h1>
         <p>Olimme ihan kyllästyneitä tavallisiin pipoihin — joten päätimme tuoda maailmaan lisää lämpöä, mukavuutta ja tyyliä. 
           </p>
@@ -41,7 +40,7 @@
         </p>
         <p>Kaikki pipot valmistetaan käsin, rakkaudella ja huolella — jotta jokainen niistä tuntuu erityiseltä
         </p>
-      </dic>
+      </div>
       <div class="welcome_video">
         <p>video coming soon...</p>
       </div>
@@ -55,21 +54,38 @@
 
     <div class="catalougue">
       <div class="product">
-        <img src="pictures/hat_scarf_white.jpg" class="scarf" alt="white_hat">
-          <div class="product_text">
-            <h2>Huppuhuivi</h2>
-            <p>Lämmin ja on monta tapaa käyttää. Sopii koko talvelle ja myös syksylle ja keväälle</p>
+        <img src="pictures/hat_scarf_white.jpg" class="hat" alt="white_hat">
+        <div class="product_text">
+          <h2>Huppuhuivi</h2>
+          <p>Lämmin ja on monta tapaa käyttää. Sopii koko talvelle ja myös syksylle ja keväälle</p>
+          <div class="color-options">
             <p>Värit:</p>
-            <a href="products/scarf.html" class="check_product">Osta</a>
+            <span class="color-circle" data-img="pictures/hat_scarf_white.jpg" style="background-color: white;"></span>
+            <span class="color-circle" data-img="pictures/hat_scarf_black.jpg" style="background-color: black;"></span>
           </div>
+          <a href="products/scarf.html" class="check_product">Osta</a>
+        </div>
+      </div>
+    
+      <div class="product">
+        <img src="pictures/hat_square_black.jpg" class="hat" alt="black_hat">
+        <div class="product_text">
+          <h2>Neliöhattu</h2>
+          <p>Neliömaisen muodon takia hatussa on korvat. Lämpivyyden ja mukavuuden takia hatussa on myös korvasuojat</p>
+          <div class="color-options">
+            <p>Värit:</p>
+            <span class="color-circle" data-img="pictures/hat_square_black.jpg" style="background-color: black;"></span>
+          </div>
+          <a href="products/square.html" class="check_product">Osta</a>
+        </div>
       </div>
     </div>
 
-
-
-
-
+    <p class="question">Et löytänyt hattua omaan tyyliin?</p>
+    <a href="#" class="send_message">Laita viesti</a>
 
   </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
